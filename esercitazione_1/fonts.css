@@ -1,0 +1,20 @@
+@font-face {
+    font-family: circular-latin;
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://encore.scdn.co/fonts/CircularSpotify-UI-Latin-Book-ffeb1e7f75131ff615f338c73751b633.woff2) format("woff2"), url(https://encore.scdn.co/fonts/CircularSpotify-UI-Latin-Book-ac71b98add4c5863080462c2e3252022.woff) format("woff")
+}
+
+@font-face {
+    font-family: circular-latin;
+    font-style: normal;
+    font-weight: 700;
+    src: url(https://encore.scdn.co/fonts/CircularSpotify-UI-Latin-Bold-39f75fe74e898cc9ebef1a4e8a6023b5.woff2) format("woff2"), url(https://encore.scdn.co/fonts/CircularSpotify-UI-Latin-Bold-8615f49cf86e86a16ebb9c5565e99743.woff) format("woff")
+}
+
+@font-face {
+    font-family: circular-latin;
+    font-style: normal;
+    font-weight: 900;
+    src: url(https://encore.scdn.co/fonts/CircularSpotify-UI-Latin-Black-765ca9bf8d2f11afb11dc49884b779ca.woff2) format("woff2"), url(https://encore.scdn.co/fonts/CircularSpotify-UI-Latin-Black-d11d90541e5f15158097018d3634a9e0.woff) format("woff")
+}
