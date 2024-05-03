@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <script src="scripts/home.js" type="module" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <title>Polify</title>
+</head>
+<body>
+<div id="app">
+    <aside id="side-menu">
+        <ul>
+            <li><a href="index.html"><i class="fa fa-solid fa-home"></i>Home</a></li>
+            <li><a href="" id="search-button"><i class="fa fa-solid fa-search"></i>Cerca</a>
+            <div><form id="search-form"><input type="text" name="search" id="search-input" hidden></form></div></li>
+            <li><a href="library.html"><i class="fa fa-solid fa-book"></i>La tua libreria</a></li>
+            <li><a href=""><i class="fa fa-solid fa-plus"></i>Crea playlist</a></li>
+            <li><a href=""><i class="fa fa-solid fa-heart"></i>Brani preferiti</a></li>
+        </ul>
+    </aside>
+    <div id="audio-player-container">
+        <div id="current-song">
+            <img class="album" src="https://www.ondarock.it/images/cover/Calcutta_cover_1698098839.jpg">
+            <div class="song-info">
+                <h1>2 minuti</h1>
+                <h2>Calcutta</h2>
+            </div>
+        </div>
+        <div id="audio-player">
+            <audio src="song.mp3" preload="metadata" loop></audio>
+            <div id="controllers-container">
+                <button class="player-button"><i class="fa-solid fa-shuffle"></i></button>
+                <button class="player-button"><i class="fa-solid fa-backward"></i></button>
+                <button class="player-button"><i class="fa fa-circle-play fa-3x"></i></button>
+                <button class="player-button"><i class="fa-solid fa-forward"></i></button>
+                <button class="player-button"><i class="fa-solid fa-repeat"></i></button>
+            </div>
+            <div id="track-slider-container">
+                <span id="current-time" class="time">0:00</span>
+                <input type="range" id="seek-slider" max="100" value="0">
+                <span id="duration" class="time">0:00</span>
+            </div>
+        </div>
+        <div id="volume-controller">
+            <button id="mute-icon" class="player-button"><i class="fa fa-solid fa-volume-high"></i></button>
+            <input type="range" id="volume-slider" max="100" value="100">
+            <output id="volume-output">100</output>
+        </div>
+    </div>
+    <main id="main-content">
+        <section>
+            <h1>Creato per Mario Rossi</h1>
+            <div class="card-carousel">
+                <div class="card">
+                    <img class="album" src="https://i.pinimg.com/1200x/9a/41/98/9a4198abfd84448781ae162c4d8bd1a6.jpg">
+                    <h1>Daily Mix 1</h1>
+                    <p>Calcutta</p>
+                </div>
+                <div class="card">
+                    <img class="album"
+                         src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebee3123e593174208f9754fab/2/en/default">
+                    <h1>Daily Mix 2</h1>
+                    <p>Drake</p>
+                </div>
+                <div class="card">
+                    <img class="album"
+                         src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebc36dd9eb55fb0db4911f25dd/3/en/default">
+                    <h1>Daily Mix 3</h1>
+                    <p>Beyoncé</p>
+                </div>
+                <div class="card">
+                    <img class="album"
+                         src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eb8278b782cbb5a3963db88ada/4/en/default">
+                    <h1>Daily Mix 4</h1>
+                    <p>Taylor Swift</p>
+                </div>
+                <div class="card">
+                    <img class="album"
+                         src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebd8b9980db67272cb4d2c3daf/5/en/default">
+                    <h1>Daily Mix 5</h1>
+                    <p>Coldplay</p>
+                </div>
+                <div class="card">
+                    <img class="album"
+                         src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eba8eef8322e55fc49ab436eea/6/en/default">
+                    <h1>Daily Mix 6</h1>
+                    <p>Ariana Grande</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h1>I tuoi mix preferiti</h1>
+            <div class="card-carousel">
+                <div class="card">
+                    <img class="album" src="https://i.scdn.co/image/ab67706f0000000291f30907bd017597e6f94001">
+                    <h1>Mega Pop Mix</h1>
+                    <p>Dua Lipa</p>
+                </div>
+                <div class="card">
+                    <img class="album" src="https://i.scdn.co/image/ab67616d0000b27363dcefae395de2e18cf2b932">
+                    <h1>Mix Rock</h1>
+                    <p>Arctic Monkeys</p>
+                </div>
+                <div class="card">
+                    <img class="album" src="https://i.scdn.co/image/ab67706f0000000290794016d698b0bc9560186f">
+                    <h1>Feel Good Indie</h1>
+                    <p>Milky Chance</p>
+                </div>
+                <div class="card">
+                    <img class="album" src="https://i.scdn.co/image/ab6761610000e5ebe6f42fb00b849720936df798">
+                    <h1>Calcutta Mix</h1>
+                    <p>Calcutta</p>
+                </div>
+                <div class="card">
+                    <img class="album"
+                         src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da841b2d97a8daa8e46ebc7356cd">
+                    <h1>Indie Chill</h1>
+                    <p>Bon Iver</p>
+                </div>
+                <div class="card">
+                    <img class="album" src="https://i.scdn.co/image/ab67616d00001e02a15e27cd081f5b8642abebfe">
+                    <h1>Pop Rock Mix</h1>
+                    <p>Maroon 5</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h1>Ascoltate di recente</h1>
+            <div class="card-carousel">
+                <div class="card">
+                    <img class="album" src="https://i.scdn.co/image/ab67616d0000b27363dcefae395de2e18cf2b932">
+                    <h1>Mix Rock</h1>
+                    <p>Arctic Monkeys</p>
+                </div>
+                <div class="card">
+                    <img class="album"
+                         src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5eba8eef8322e55fc49ab436eea/6/en/default">
+                    <h1>Daily Mix 6</h1>
+                    <p>Ariana Grande</p>
+                </div>
+                <div class="card">
+                    <img class="album" src="https://i.scdn.co/image/ab67616d00001e02a15e27cd081f5b8642abebfe">
+                    <h1>Pop Rock Mix</h1>
+                    <p>Maroon 5</p>
+                </div>
+                <div class="card">
+                    <img class="album" src="https://i.pinimg.com/1200x/9a/41/98/9a4198abfd84448781ae162c4d8bd1a6.jpg">
+                    <h1>Daily Mix 1</h1>
+                    <p>Calcutta</p>
+                </div>
+                <div class="card">
+                    <img class="album" src="https://i.scdn.co/image/ab6761610000e5ebe6f42fb00b849720936df798">
+                    <h1>Calcutta Mix</h1>
+                    <p>Calcutta</p>
+                </div>
+                <div class="card">
+                    <img class="album"
+                         src="https://dailymix-images.scdn.co/v2/img/ab6761610000e5ebd8b9980db67272cb4d2c3daf/5/en/default">
+                    <h1>Daily Mix 5</h1>
+                    <p>Coldplay</p>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+</body>
+</html>
