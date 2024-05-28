@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <script src="scripts/library.js" type="module" defer></script>
+    <script src="scripts/script.js" defer></script>
+    <title>Polify</title>
+</head>
+<body>
+<div id="app">
+    <aside id="side-menu">
+        <ul>
+            <li><a href="index.html"><i class="fa fa-solid fa-home"></i>Home</a></li>
+            <li><a href="" id="search-button"><i class="fa fa-solid fa-search"></i>Cerca</a>
+                <div><form id="search-form"><input type="text" name="search" id="search-input" hidden></form></div></li>
+            <li><a href="library.html"><i class="fa fa-solid fa-book"></i>La tua libreria</a></li>
+            <li><a href=""><i class="fa fa-solid fa-plus"></i>Crea playlist</a></li>
+            <li><a href=""><i class="fa fa-solid fa-heart"></i>Brani preferiti</a></li>
+        </ul>
+    </aside>
+    <div id="audio-player-container">
+        <div id="current-song">
+            <img class="album" src="https://www.ondarock.it/images/cover/Calcutta_cover_1698098839.jpg">
+            <div class="song-info">
+                <h1>2 minuti</h1>
+                <h2>Calcutta</h2>
+            </div>
+        </div>
+        <div id="audio-player">
+            <audio src="song.mp3" preload="metadata" loop></audio>
+            <div id="controllers-container">
+                <button class="player-button"><i class="fa-solid fa-shuffle"></i></button>
+                <button class="player-button"><i class="fa-solid fa-backward"></i></button>
+                <button class="player-button"><i class="fa fa-circle-play fa-3x"></i></button>
+                <button class="player-button"><i class="fa-solid fa-forward"></i></button>
+                <button class="player-button"><i class="fa-solid fa-repeat"></i></button>
+            </div>
+            <div id="track-slider-container">
+                <span id="current-time" class="time">0:00</span>
+                <input type="range" id="seek-slider" max="100" value="0">
+                <span id="duration" class="time">0:00</span>
+            </div>
+        </div>
+        <div id="volume-controller">
+            <button id="mute-icon" class="player-button"><i class="fa fa-solid fa-volume-high"></i></button>
+            <input type="range" id="volume-slider" max="100" value="100">
+            <output id="volume-output">100</output>
+        </div>
+    </div>
+    <main id="main-content">
+        <section>
+            <h1>La tua libreria</h1>
+            <div id="filter">
+                <button id="all-btn">All</button>
+                <button id="playlist-btn">Playlist</button>
+                <button id="album-btn">Album</button>
+            </div>
+            <table id="library">
+                <thead>
+                <tr><th>Titolo</th><th>Durata</th><th>Brani</th><th>Data</th><th>Autore</th></tr>
+                </thead>
+                <tbody id="library-body">
+                </tbody>
+            </table>
+        </section>
+    </main>
+</div>
+</body>
+</html>
